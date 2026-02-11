@@ -1,5 +1,11 @@
 import '../styles/global.css';
 
+// Always scroll to top on page load/refresh
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+
 document.addEventListener('DOMContentLoaded', () => {
     // Hide System Loader
     const loader = document.getElementById('system-loader');
