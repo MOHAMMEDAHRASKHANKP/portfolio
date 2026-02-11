@@ -1,7 +1,5 @@
 import '../styles/global.css';
 
-console.log('Portfolio initialized');
-
 document.addEventListener('DOMContentLoaded', () => {
     // Hide System Loader
     const loader = document.getElementById('system-loader');
