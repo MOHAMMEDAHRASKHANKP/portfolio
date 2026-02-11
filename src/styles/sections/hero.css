@@ -137,6 +137,12 @@
     border-top: 0;
 }
 
+@media (max-width: 768px) {
+    .hud-corner {
+        display: none;
+    }
+}
+
 /* System Metrics Sidebar */
 .system-metrics {
     position: absolute;
