@@ -127,8 +127,9 @@
     }
 
     #header.scrolled .header-container {
-        max-width: 95%;
-        border-radius: 20px;
+        max-width: 92%;
+        border-radius: 50px;
+        padding: 0.6rem 1.2rem;
     }
 
     .nav-menu {
@@ -179,15 +180,18 @@
     }
 
     .menu-toggle {
-        display: block;
-        padding: 0.5rem;
-        position: relative;
+        display: flex;
+        font-size: 1.8rem;
+        color: var(--primary);
+        cursor: pointer;
         z-index: 2100;
         transition: all 0.3s ease;
+        padding: 0.5rem;
     }
+}
 
-    .menu-toggle:hover {
-        color: var(--primary);
-        text-shadow: 0 0 10px var(--primary-glow);
-    }
+.menu-toggle:hover {
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--primary-glow);
+}
 }
