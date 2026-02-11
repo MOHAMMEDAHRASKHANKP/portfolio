@@ -387,9 +387,12 @@
     }
 
     .carousel-btn {
-        width: 50px;
-        height: 50px;
-        font-size: 1rem;
+        width: 54px;
+        height: 54px;
+        font-size: 1.2rem;
+        background: rgba(0, 255, 157, 0.2);
+        border-width: 2px;
+        box-shadow: 0 0 15px var(--primary-glow);
     }
 
     .vault-container {

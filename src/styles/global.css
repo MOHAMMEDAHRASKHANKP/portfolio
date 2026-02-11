@@ -64,6 +64,16 @@ img {
     padding: var(--spacing-xl) 0;
 }
 
+@media (max-width: 768px) {
+    .section {
+        padding: 4rem 0;
+    }
+
+    html {
+        font-size: 15px;
+    }
+}
+
 /* Typography Utilities */
 h1,
 h2,

@@ -80,6 +80,24 @@
     margin-top: var(--spacing-md);
 }
 
+@media (max-width: 600px) {
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+}
+
 /* HUD Corners */
 .hud-corner {
     position: absolute;
