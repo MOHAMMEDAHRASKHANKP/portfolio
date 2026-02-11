@@ -352,27 +352,63 @@
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
+    .neural-carousel-wrapper {
+        margin: 2rem auto;
+        padding: 1rem 0;
+        perspective: 1200px;
+    }
+
+    .neural-carousel-container {
+        height: 400px;
+    }
+
     .carousel-item {
-        width: 280px;
-        height: 380px;
+        width: 260px;
+        height: 340px;
+        transform: translate3d(0, 0, -300px);
+    }
+
+    .carousel-item.active {
+        transform: translate3d(0, 0, 50px);
     }
 
     .carousel-item.prev {
-        transform: translate3d(-150px, 0, -250px) rotateY(30deg);
-        opacity: 0.3;
+        transform: translate3d(-120px, 0, -180px) rotateY(25deg);
+        opacity: 0.4;
     }
 
     .carousel-item.next {
-        transform: translate3d(150px, 0, -250px) rotateY(-30deg);
-        opacity: 0.3;
+        transform: translate3d(120px, 0, -180px) rotateY(-25deg);
+        opacity: 0.4;
+    }
+
+    .carousel-controls {
+        padding: 0 0.5rem;
+    }
+
+    .carousel-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
     }
 
     .vault-container {
-        width: 95%;
-        padding: 1.5rem;
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+        border-radius: 0;
+        padding: 1.5rem 1rem;
+        margin: 0;
+    }
+
+    .vault-header {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
     }
 
     .vault-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+        padding-right: 0;
     }
 }
