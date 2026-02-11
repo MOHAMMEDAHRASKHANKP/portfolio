@@ -1,0 +1,109 @@
+/* Contact Section */
+#contact {
+    text-align: center;
+    background-color: var(--bg-dark);
+    position: relative;
+}
+
+.contact-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-simple-container {
+    display: grid;
+    gap: 1.2rem;
+    max-width: 1100px;
+    margin: 2rem auto 0;
+}
+
+@media (min-width: 768px) {
+    .contact-simple-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.contact-card-v2 {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card-v2:hover {
+    border-color: var(--secondary);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.1);
+}
+
+.c-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    gap: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.c-icon-wrap {
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    transition: all 0.4s ease;
+}
+
+.contact-card-v2:hover .c-icon-wrap {
+    border-color: var(--secondary);
+    background: rgba(0, 210, 255, 0.1);
+    box-shadow: 0 0 20px var(--secondary-glow);
+}
+
+.c-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.c-label {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    letter-spacing: 1.5px;
+}
+
+.c-value {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-highlight);
+    word-break: break-all;
+}
+
+/* Footer */
+#footer {
+    background-color: #050507;
+    padding: var(--spacing-md) 0;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-nav a:hover {
+    color: var(--text-highlight);
+}

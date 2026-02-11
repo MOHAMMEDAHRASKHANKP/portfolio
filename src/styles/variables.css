@@ -1,0 +1,58 @@
+:root {
+  /* Color Palette - Cybersecurity / Dark Mode */
+  --bg-dark: #0a0a0c;
+  --bg-panel: #131316;
+  --bg-panel-hover: #1c1c21;
+
+  --primary: #00ff9d;
+  /* Neon Green */
+  --primary-glow: rgba(0, 255, 157, 0.4);
+  --secondary: #00d2ff;
+  /* Cyan */
+  --secondary-glow: rgba(0, 210, 255, 0.4);
+  --accent: #bd00ff;
+  /* Purple */
+
+  --text-main: #e0e0e0;
+  --text-muted: #888899;
+  --text-highlight: #ffffff;
+
+  --border-color: #333333;
+  --border-active: #555555;
+
+  /* Typography */
+  --font-main: 'Inter', sans-serif;
+  --font-header: 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Cyber Premium Tokens */
+  --danger: #ff4444;
+  --danger-glow: rgba(255, 68, 68, 0.4);
+  --warning: #ffaa00;
+  --warning-glow: rgba(255, 170, 0, 0.4);
+  --hud-bg: rgba(10, 10, 12, 0.85);
+  --hud-border: rgba(0, 255, 157, 0.2);
+
+  /* UI Elements */
+  --radius-sm: 2px;
+  /* Sharper edges for technical feel */
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: 10px;
+
+  /* Animation */
+  --transition-fast: 0.2s ease;
+  --transition-smooth: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  --transition-slow: 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
