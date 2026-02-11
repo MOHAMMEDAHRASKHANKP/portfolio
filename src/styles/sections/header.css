@@ -191,10 +191,9 @@
         border-radius: 4px;
         border: 1px solid rgba(0, 255, 157, 0.1);
     }
-}
 
-.menu-toggle:hover {
-    color: var(--primary);
-    text-shadow: 0 0 10px var(--primary-glow);
-}
+    .menu-toggle:hover {
+        color: var(--text-highlight);
+        text-shadow: 0 0 10px var(--primary-glow);
+    }
 }
