@@ -16,6 +16,7 @@
   <title>Mohammed Ahras Khan | Cybersecurity Pro</title>
 
   <!-- Phosphor Icons -->
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css" />
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
@@ -994,30 +995,20 @@
       </div>
       <!-- Session Status Bar -->
       <div class="session-bar">
-        <div class="session-item">
+        <div class="session-left">
           <span class="session-label">STATUS:</span>
           <span class="session-value" style="color: var(--primary)">CONNECTED</span>
         </div>
-        <div class="footer-bottom">
-          <p class="footer-copyright">&copy; 2024 Mohammed Ahras Khan. All Rights Reserved.</p>
-          <div class="session-item">
-            <span class="session-label">SESSION_TIME:</span>
-            <span class="session-value" id="session-time">00:00:00 IST</span>
-          </div>
-          <div class="session-right">
-            <span class="session-label hide-mobile">BITRATE:</span>
-            <span id="session-bitrate" class="session-value hide-mobile">0.00 Kbps</span>
-            <span class="session-label hide-mobile">SIGNAL:</span>
-            <div class="signal-bars">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar active"></div>
-              <div class="bar active"></div>
-            </div>
-            <span class="session-label hide-mobile">LOC:</span>
-            <span class="session-value hide-mobile">BENGALURU, IN</span>
-          </div>
+
+        <div class="footer-copyright-wrap">
+          <p>&copy; 2024 Mohammed Ahras Khan. All Rights Reserved.</p>
         </div>
+
+        <div class="session-right">
+          <span class="session-label">LOC:</span>
+          <span class="session-value">BENGALURU, IN</span>
+        </div>
+      </div>
     </footer>
     <!-- Project Modal -->
     <div id="project-modal" class="modal-overlay">
