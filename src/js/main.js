@@ -7,6 +7,40 @@ if ('scrollRestoration' in history) {
 window.scrollTo(0, 0);
 
 document.addEventListener('DOMContentLoaded', () => {
+    // ==============================
+    // Theme Toggle (Cyber Dark / SOC Blue)
+    // ==============================
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const htmlEl = document.documentElement;
+    const themeLabel = themeToggleBtn?.querySelector('.theme-label');
+    const themeIcon = themeToggleBtn?.querySelector('.theme-icon');
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem('ahras-theme') || 'cyber';
+    if (savedTheme === 'soc') {
+        htmlEl.setAttribute('data-theme', 'soc');
+        if (themeLabel) themeLabel.textContent = 'SOC';
+        if (themeIcon) themeIcon.textContent = '◈';
+    }
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = htmlEl.getAttribute('data-theme');
+            if (currentTheme === 'soc') {
+                htmlEl.removeAttribute('data-theme');
+                localStorage.setItem('ahras-theme', 'cyber');
+                if (themeLabel) themeLabel.textContent = 'CYBER';
+                if (themeIcon) themeIcon.textContent = '⬡';
+            } else {
+                htmlEl.setAttribute('data-theme', 'soc');
+                localStorage.setItem('ahras-theme', 'soc');
+                if (themeLabel) themeLabel.textContent = 'SOC';
+                if (themeIcon) themeIcon.textContent = '◈';
+            }
+        });
+    }
+
+
     // Hide System Loader
     const loader = document.getElementById('system-loader');
     if (loader) {

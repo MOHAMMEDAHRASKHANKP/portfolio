@@ -1,29 +1,29 @@
+/* ==============================
+   THEME: CYBER DARK (Default)
+   ============================== */
 :root {
-  /* Color Palette - Cybersecurity / Dark Mode */
-  --bg-dark: #0a0a0c;
-  --bg-panel: #131316;
-  --bg-panel-hover: #1c1c21;
+  --bg-dark: #080810;
+  --bg-panel: #0f0f18;
+  --bg-panel-hover: #18182a;
 
   --primary: #00ff9d;
-  /* Neon Green */
-  --primary-glow: rgba(0, 255, 157, 0.4);
+  --primary-glow: rgba(0, 255, 157, 0.35);
   --secondary: #00d2ff;
-  /* Cyan */
-  --secondary-glow: rgba(0, 210, 255, 0.4);
+  --secondary-glow: rgba(0, 210, 255, 0.35);
   --accent: #bd00ff;
-  /* Purple */
+  --accent-glow: rgba(189, 0, 255, 0.3);
 
-  --text-main: #e0e0e0;
-  --text-muted: #888899;
+  --text-main: #e2e2f0;
+  --text-muted: #7a7a9a;
   --text-highlight: #ffffff;
 
-  --border-color: #333333;
-  --border-active: #555555;
+  --border-color: #2a2a3a;
+  --border-active: #4a4a6a;
 
-  /* Typography */
-  --font-main: 'Inter', sans-serif;
-  --font-header: 'Outfit', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  /* Typography — Space Grotesk + Fira Code */
+  --font-main: 'Space Grotesk', sans-serif;
+  --font-header: 'Space Grotesk', sans-serif;
+  --font-mono: 'Fira Code', monospace;
 
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -32,27 +32,58 @@
   --spacing-lg: 4rem;
   --spacing-xl: 8rem;
 
-  /* Cyber Premium Tokens */
-  --danger: #ff4444;
-  --danger-glow: rgba(255, 68, 68, 0.4);
+  /* Tokens */
+  --danger: #ff4455;
+  --danger-glow: rgba(255, 68, 85, 0.4);
   --warning: #ffaa00;
   --warning-glow: rgba(255, 170, 0, 0.4);
-  --hud-bg: rgba(10, 10, 12, 0.85);
-  --hud-border: rgba(0, 255, 157, 0.2);
+  --hud-bg: rgba(8, 8, 16, 0.88);
+  --hud-border: rgba(0, 255, 157, 0.18);
 
-  /* UI Elements */
-  --radius-sm: 2px;
-  /* Sharper edges for technical feel */
-  --radius-md: 4px;
-  --radius-lg: 8px;
+  /* UI */
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
 
   /* Glassmorphism */
-  --glass-bg: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-blur: 10px;
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-blur: 12px;
 
   /* Animation */
   --transition-fast: 0.2s ease;
   --transition-smooth: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   --transition-slow: 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+
+  /* Theme transition */
+  --theme-transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* ==============================
+   THEME: SOC BLUE
+   ============================== */
+[data-theme="soc"] {
+  --bg-dark: #060c1a;
+  --bg-panel: #0a1428;
+  --bg-panel-hover: #0f1e38;
+
+  --primary: #38bdf8;
+  --primary-glow: rgba(56, 189, 248, 0.35);
+  --secondary: #06b6d4;
+  --secondary-glow: rgba(6, 182, 212, 0.35);
+  --accent: #f97316;
+  --accent-glow: rgba(249, 115, 22, 0.3);
+
+  --text-main: #dbeafe;
+  --text-muted: #6b8aad;
+  --text-highlight: #f0f9ff;
+
+  --border-color: #1e3a5f;
+  --border-active: #2d5a8e;
+
+  --hud-bg: rgba(6, 12, 26, 0.90);
+  --hud-border: rgba(56, 189, 248, 0.18);
+
+  --glass-bg: rgba(56, 189, 248, 0.03);
+  --glass-border: rgba(56, 189, 248, 0.1);
 }

@@ -197,3 +197,83 @@
         text-shadow: 0 0 10px var(--primary-glow);
     }
 }
+
+/* ==============================
+   Header Right — Toggle + Hamburger
+   ============================== */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* ==============================
+   Theme Toggle Button
+   ============================== */
+.theme-toggle-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.9rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--primary);
+    border-radius: 50px;
+    color: var(--primary);
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    backdrop-filter: blur(8px);
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.theme-toggle-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--primary);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 50px;
+}
+
+.theme-toggle-btn:hover::before {
+    opacity: 0.08;
+}
+
+.theme-toggle-btn:hover {
+    box-shadow: 0 0 18px var(--primary-glow);
+    transform: scale(1.04);
+}
+
+.theme-icon {
+    font-size: 0.9rem;
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.theme-toggle-btn:hover .theme-icon {
+    transform: rotate(60deg);
+}
+
+/* SOC theme overrides toggle appearance */
+[data-theme="soc"] .theme-toggle-btn {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+[data-theme="soc"] .theme-toggle-btn:hover {
+    box-shadow: 0 0 18px var(--primary-glow);
+}
+
+@media (max-width: 768px) {
+    .theme-label {
+        display: none;
+    }
+    .theme-toggle-btn {
+        padding: 0.4rem 0.6rem;
+    }
+}
