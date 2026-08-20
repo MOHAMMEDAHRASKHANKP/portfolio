@@ -34,17 +34,80 @@
     z-index: 1;
 }
 
+.hero-badge-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: var(--spacing-sm);
+}
+
 .hero-badge {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     padding: 0.25rem 0.75rem;
     background: rgba(0, 255, 157, 0.1);
     color: var(--primary);
     border: 1px solid var(--primary-glow);
     border-radius: 50px;
     font-family: var(--font-mono);
-    font-size: 0.8rem;
-    margin-bottom: var(--spacing-sm);
+    font-size: 0.75rem;
     letter-spacing: 1px;
+}
+
+.hero-available-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    background: rgba(0, 210, 255, 0.1);
+    color: var(--secondary);
+    border: 1px solid var(--secondary-glow);
+    border-radius: 50px;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+}
+
+.avail-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: var(--secondary);
+    border-radius: 50%;
+    margin-right: 6px;
+    box-shadow: 0 0 8px var(--secondary-glow);
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.hero-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.hero-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    transition: var(--transition-fast);
+}
+
+.hero-social-link:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+    background: rgba(0, 255, 157, 0.1);
+    box-shadow: 0 0 15px var(--primary-glow);
+    transform: translateY(-3px);
 }
 
 .hero-title {
@@ -95,6 +158,16 @@
 
     .hero-subtitle {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    .hero-actions .btn {
+        padding: 0.65rem 1rem;
+        font-size: 0.7rem;
     }
 }
 

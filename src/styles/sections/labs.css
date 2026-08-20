@@ -353,3 +353,51 @@
 .lightbox-close:hover {
     color: var(--primary);
 }
+
+/* ==============================
+   MOBILE FIXES — Labs Section
+   ============================== */
+@media (max-width: 600px) {
+    /* Cert cards stack vertically on phones */
+    .cert-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .cert-preview {
+        width: 100%;
+        height: 140px;
+        flex-shrink: unset;
+    }
+
+    /* THM stats grid — smaller min-width for phones */
+    .thm-stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: var(--spacing-sm);
+    }
+
+    .thm-stat-value {
+        font-size: 1.4rem;
+    }
+
+    /* VulnHub grid — force single column on phones */
+    .vulnhub-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Badge grid — 2 columns max on phones */
+    .thm-badge-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Lightbox close button — easier to tap */
+    .lightbox-close {
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        background: rgba(0,0,0,0.6);
+        padding: 0.3rem 0.7rem;
+        border-radius: 4px;
+    }
+}

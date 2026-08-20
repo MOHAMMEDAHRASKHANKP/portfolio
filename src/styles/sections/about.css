@@ -99,3 +99,29 @@
     border: 1px solid var(--glass-border);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
+
+/* ==============================
+   MOBILE FIXES — About Section
+   ============================== */
+@media (max-width: 768px) {
+    /* Hide the 480px code visual box on mobile — saves huge space */
+    .about-visual {
+        display: none;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-bio {
+        font-size: 1rem;
+    }
+
+    .about-stats {
+        gap: var(--spacing-sm);
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+}
