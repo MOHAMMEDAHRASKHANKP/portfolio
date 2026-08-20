@@ -212,84 +212,153 @@
       <section id="skills" class="section reveal-scan">
         <div class="container">
           <div class="skills-intro">
-            <h4 class="text-gradient">EXPERTISE</h4>
-            <h2>Technical Arsenal</h2>
-            <p style="color: var(--text-muted)">Tools and technologies I use to secure and monitor digital environments.
-            </p>
+            <h4 class="text-gradient">OPERATIONAL CAPABILITIES</h4>
+            <h2>Technical Arsenal & Core Stack</h2>
+            <p style="color: var(--text-muted)">Battle-tested tools, detection platforms, and defensive frameworks deployed across live labs and real-world operations.</p>
           </div>
 
           <div class="skills-grid">
-            <!-- Card 1: Defense -->
+            <!-- Domain 1: SOC Ops & SIEM -->
             <div class="skill-card">
               <div class="skill-header">
-                <div class="skill-icon">🛡️</div>
-                <h3 class="skill-title">Cyber Defense</h3>
+                <div class="skill-header-main">
+                  <div class="skill-icon-wrap">
+                    <i class="ph ph-shield-check"></i>
+                  </div>
+                  <div class="skill-title-group">
+                    <h3>SOC Ops & SIEM</h3>
+                  </div>
+                </div>
+                <span class="skill-badge-code">BLUE_TEAM</span>
               </div>
+              <p class="skill-desc">Real-time log ingestion, alert correlation, and incident triage across enterprise telemetry.</p>
               <div class="skill-list">
-                <span class="skill-tag">SOC Ops</span>
-                <span class="skill-tag">SIEM (Splunk)</span>
-                <span class="skill-tag">EDR/XDR</span>
-                <span class="skill-tag">Threat Intel</span>
+                <span class="skill-tag">Splunk SIEM</span>
+                <span class="skill-tag">ELK Stack</span>
+                <span class="skill-tag">Log Analysis</span>
                 <span class="skill-tag">MITRE ATT&CK</span>
+                <span class="skill-tag">Incident Triage</span>
+                <span class="skill-tag">Threat Hunting</span>
               </div>
             </div>
 
-            <!-- Card 2: Offense -->
+            <!-- Domain 2: Threat Detection & EDR -->
             <div class="skill-card">
               <div class="skill-header">
-                <div class="skill-icon">⚔️</div>
-                <h3 class="skill-title">Ethical Hacking</h3>
+                <div class="skill-header-main">
+                  <div class="skill-icon-wrap">
+                    <i class="ph ph-crosshair-simple"></i>
+                  </div>
+                  <div class="skill-title-group">
+                    <h3>Threat Detection & EDR</h3>
+                  </div>
+                </div>
+                <span class="skill-badge-code">ENDPOINT</span>
               </div>
+              <p class="skill-desc">Deep endpoint telemetry monitoring, IOC validation, and adversarial behavior mitigation.</p>
               <div class="skill-list">
-                <span class="skill-tag">Burp Suite</span>
+                <span class="skill-tag">Wazuh EDR/XDR</span>
+                <span class="skill-tag">Sysmon</span>
+                <span class="skill-tag">IOC / IOA Triage</span>
+                <span class="skill-tag">Malware Analysis</span>
+                <span class="skill-tag">Threat Intel</span>
+                <span class="skill-tag">Root Cause Analysis</span>
+              </div>
+            </div>
+
+            <!-- Domain 3: Offensive Security & Pentesting -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-header-main">
+                  <div class="skill-icon-wrap">
+                    <i class="ph ph-skull"></i>
+                  </div>
+                  <div class="skill-title-group">
+                    <h3>Ethical Hacking & VA</h3>
+                  </div>
+                </div>
+                <span class="skill-badge-code">OFFENSIVE</span>
+              </div>
+              <p class="skill-desc">Vulnerability assessment, exploitation testing, and web app security validation.</p>
+              <div class="skill-list">
+                <span class="skill-tag">Burp Suite Pro</span>
                 <span class="skill-tag">Metasploit</span>
                 <span class="skill-tag">Nmap</span>
                 <span class="skill-tag">Wireshark</span>
                 <span class="skill-tag">Kali Linux</span>
+                <span class="skill-tag">OWASP Top 10</span>
               </div>
             </div>
 
-            <!-- Card 3: Code -->
+            <!-- Domain 4: Network Defense & Architecture -->
             <div class="skill-card">
               <div class="skill-header">
-                <div class="skill-icon">💻</div>
-                <h3 class="skill-title">Programming</h3>
+                <div class="skill-header-main">
+                  <div class="skill-icon-wrap">
+                    <i class="ph ph-globe-hemisphere-east"></i>
+                  </div>
+                  <div class="skill-title-group">
+                    <h3>Network Defense</h3>
+                  </div>
+                </div>
+                <span class="skill-badge-code">INFRA_SEC</span>
               </div>
+              <p class="skill-desc">Traffic inspection, perimeter defense configuration, and Zero Trust access management.</p>
               <div class="skill-list">
-                <span class="skill-tag">Python (Security)</span>
-                <span class="skill-tag">Java</span>
-                <span class="skill-tag">Bash Scripting</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">API Security</span>
+                <span class="skill-tag">Zero Trust (Zscaler)</span>
+                <span class="skill-tag">Next-Gen Firewalls</span>
+                <span class="skill-tag">TCP/IP Deep Packet</span>
+                <span class="skill-tag">Snort IDS/IPS</span>
+                <span class="skill-tag">VPNs & Routing</span>
+                <span class="skill-tag">DNS/HTTP Protocols</span>
               </div>
             </div>
 
-            <!-- Card 4: Networking -->
+            <!-- Domain 5: Security Engineering & Automation -->
             <div class="skill-card">
               <div class="skill-header">
-                <div class="skill-icon">🌐</div>
-                <h3 class="skill-title">Network Security</h3>
+                <div class="skill-header-main">
+                  <div class="skill-icon-wrap">
+                    <i class="ph ph-terminal-window"></i>
+                  </div>
+                  <div class="skill-title-group">
+                    <h3>SecOps & Scripting</h3>
+                  </div>
+                </div>
+                <span class="skill-badge-code">DEV_SEC</span>
               </div>
+              <p class="skill-desc">Custom automation pipelines, log parsing scripts, and secure software development.</p>
               <div class="skill-list">
-                <span class="skill-tag">Zero Trust</span>
-                <span class="skill-tag">TCP/IP</span>
-                <span class="skill-tag">HTTP/S Analysis</span>
-                <span class="skill-tag">Load Balancers</span>
-                <span class="skill-tag">Firewalls</span>
+                <span class="skill-tag">Python (SecOps)</span>
+                <span class="skill-tag">Bash Automation</span>
+                <span class="skill-tag">Regex Extraction</span>
+                <span class="skill-tag">SQL & DB Security</span>
+                <span class="skill-tag">REST API Testing</span>
+                <span class="skill-tag">Git Version Control</span>
               </div>
             </div>
 
-            <!-- Card 5: Core -->
+            <!-- Domain 6: Governance, Risk & Hardening -->
             <div class="skill-card">
               <div class="skill-header">
-                <div class="skill-icon">📜</div>
-                <h3 class="skill-title">Academic & Certs</h3>
+                <div class="skill-header-main">
+                  <div class="skill-icon-wrap">
+                    <i class="ph ph-certificate"></i>
+                  </div>
+                  <div class="skill-title-group">
+                    <h3>GRC & System Hardening</h3>
+                  </div>
+                </div>
+                <span class="skill-badge-code">STANDARDS</span>
               </div>
+              <p class="skill-desc">Security posture management, compliance benchmarking, and defensive hardening.</p>
               <div class="skill-list">
-                <span class="skill-tag">M.Sc Comp Sci</span>
+                <span class="skill-tag">NIST CSF</span>
+                <span class="skill-tag">ISO/IEC 27001</span>
+                <span class="skill-tag">OS Hardening</span>
+                <span class="skill-tag">Vuln Management</span>
                 <span class="skill-tag">ADCD Certified</span>
-                <span class="skill-tag">CEH (Ongoing)</span>
-                <span class="skill-tag">Zscaler Spec.</span>
+                <span class="skill-tag">IR Playbooks</span>
               </div>
             </div>
           </div>

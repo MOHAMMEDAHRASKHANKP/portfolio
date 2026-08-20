@@ -29,7 +29,7 @@
 
 .hero-content {
     text-align: center;
-    max-width: 800px;
+    max-width: 960px;
     padding: 0 var(--spacing-sm);
     z-index: 1;
 }

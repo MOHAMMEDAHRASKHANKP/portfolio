@@ -58,8 +58,8 @@ img {
 
 /* Utilities */
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 92%;
+    max-width: 1380px;
     margin: 0 auto;
     padding: 0 var(--spacing-sm);
 }
