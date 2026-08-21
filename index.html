@@ -737,59 +737,57 @@
       <section id="writeups" class="section reveal-scan">
         <div class="container">
           <div class="section-header">
-            <h4 class="text-gradient">THREAT INTEL</h4>
-            <h2>Research & Writeups</h2>
-            <p style="color: var(--text-muted); max-width: 600px;">
-              Documenting my findings in cybersecurity, threat analysis, and CTF challenges.
-              Sharing knowledge to contribute to the defensive community.
+            <h4 class="text-gradient">THREAT INTEL & RESEARCH</h4>
+            <h2>Publications & Writeups</h2>
+            <p style="color: var(--text-muted); max-width: 650px;">
+              Documenting real-world incident investigations, SIEM log analyses, malware triage, and hands-on cyber range walkthroughs on Medium.
             </p>
           </div>
 
           <div class="writeups-grid">
             <div class="writeup-card featured">
-              <div class="writeup-badge">LATEST INTEL</div>
               <div class="writeup-content">
-                <h3 class="writeup-title">Cybersecurity Research & CTF Notes</h3>
+                <div class="writeup-meta-header">
+                  <span class="writeup-badge"><i class="ph ph-medium-logo"></i> MEDIUM PUBLICATION</span>
+                  <span class="writeup-reading-time">• BY MOHAMMED AHRAS KHAN</span>
+                </div>
+                <h3 class="writeup-title">SOC Investigations, Threat Hunting & CTF Walkthroughs</h3>
                 <p class="writeup-desc">
-                  I regularly publish detailed writeups on Medium covering SOC operations, malware analysis, and
-                  walkthroughs for platforms like TryHackMe and VulnHub.
+                  Detailed writeups covering Splunk SIEM log triage, Sysmon endpoint analysis, TryHackMe room breakdowns, and proactive detection engineering strategies.
                 </p>
                 <div class="writeup-tags">
                   <span class="v-tag">#SOCAnalysis</span>
                   <span class="v-tag">#ThreatHunting</span>
-                  <span class="v-tag">#CTF</span>
-                  <span class="v-tag">#Notes</span>
+                  <span class="v-tag">#SplunkSIEM</span>
+                  <span class="v-tag">#TryHackMe</span>
+                  <span class="v-tag">#BlueTeam</span>
+                  <span class="v-tag">#IncidentResponse</span>
                 </div>
-                <div style="margin-top: 2rem;">
-                  <a href="https://medium.com/@ahraskhankp" target="_blank" class="btn btn-primary">
-                    <i class="ph ph-medium-logo"></i> Read on Medium
+                <div class="writeup-actions">
+                  <a href="https://medium.com/@ahraskhankp" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <i class="ph ph-medium-logo"></i> Read on Medium.com
+                  </a>
+                  <a href="https://medium.com/@ahraskhankp" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="ph ph-arrow-square-out"></i> View Author Profile
                   </a>
                 </div>
               </div>
-              <div class="writeup-visual">
-                <div class="terminal-echo-graphic">
-                  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Terminal Window Frame -->
-                    <rect x="25" y="45" width="150" height="110" rx="8" class="term-frame" />
 
-                    <!-- Title Bar -->
-                    <rect x="25" y="45" width="150" height="20" rx="8" class="term-title" />
-                    <g class="term-dots">
-                      <circle cx="40" cy="55" r="3" fill="#ff5f56" />
-                      <circle cx="55" cy="55" r="3" fill="#ffbd2e" />
-                      <circle cx="70" cy="55" r="3" fill="#27c93f" />
-                    </g>
-
-                    <!-- Scrolling Logs (masking for tail effect) -->
-                    <g class="term-body">
-                      <text x="35" y="85" class="term-log l1">DETECTING_INTEL...</text>
-                      <text x="35" y="105" class="term-log l2">ANALYZING_WRITEUP</text>
-                      <text x="35" y="125" class="term-log l3">STATUS:_SECURE</text>
-
-                      <!-- Command Prompt -->
-                      <text x="35" y="145" class="term-prompt">>_</text>
-                    </g>
-                  </svg>
+              <!-- Cyber Terminal Box (Pure CSS, Responsive) -->
+              <div class="writeup-terminal-box">
+                <div class="terminal-top-bar">
+                  <span class="term-dot red"></span>
+                  <span class="term-dot yellow"></span>
+                  <span class="term-dot green"></span>
+                  <span class="term-bar-title">intel_log.sh</span>
+                </div>
+                <div class="terminal-body">
+                  <span class="term-line-cmd">&gt; cat /sec/medium_intel.log</span>
+                  <span class="term-line-out">✓ SIEM Log Investigation</span>
+                  <span class="term-line-out">✓ Threat Hunting Playbook</span>
+                  <span class="term-line-out">✓ TryHackMe 118 Rooms</span>
+                  <span class="term-line-dim">[STATUS] Live on Medium</span>
+                  <span class="term-line-cmd">&gt; read_article --author=ahras <span class="term-cursor"></span></span>
                 </div>
               </div>
             </div>
