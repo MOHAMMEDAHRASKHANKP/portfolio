@@ -1,24 +1,28 @@
 /* ==============================
-   THEME: CYBER DARK (Default)
+   THEME: CYBER PURPLE / NEON VIOLET (Default)
    ============================== */
 :root {
-  --bg-dark: #080810;
-  --bg-panel: #0f0f18;
-  --bg-panel-hover: #18182a;
+  --bg-dark: #07050e;
+  --bg-panel: #0f0b1c;
+  --bg-panel-hover: #18122d;
 
-  --primary: #00ff9d;
-  --primary-glow: rgba(0, 255, 157, 0.35);
-  --secondary: #00d2ff;
-  --secondary-glow: rgba(0, 210, 255, 0.35);
-  --accent: #bd00ff;
-  --accent-glow: rgba(189, 0, 255, 0.3);
+  --primary: #a855f7;
+  --primary-bright: #c084fc;
+  --primary-glow: rgba(168, 85, 247, 0.4);
+  --primary-glow-subtle: rgba(168, 85, 247, 0.15);
 
-  --text-main: #e2e2f0;
-  --text-muted: #7a7a9a;
+  --secondary: #00f0ff;
+  --secondary-glow: rgba(0, 240, 255, 0.35);
+
+  --accent: #ec4899;
+  --accent-glow: rgba(236, 72, 153, 0.35);
+
+  --text-main: #ece7f6;
+  --text-muted: #9387ae;
   --text-highlight: #ffffff;
 
-  --border-color: #2a2a3a;
-  --border-active: #4a4a6a;
+  --border-color: #261a3d;
+  --border-active: #543884;
 
   /* Typography — Space Grotesk + Fira Code */
   --font-main: 'Space Grotesk', sans-serif;
@@ -35,19 +39,19 @@
   /* Tokens */
   --danger: #ff4455;
   --danger-glow: rgba(255, 68, 85, 0.4);
-  --warning: #ffaa00;
-  --warning-glow: rgba(255, 170, 0, 0.4);
-  --hud-bg: rgba(8, 8, 16, 0.88);
-  --hud-border: rgba(0, 255, 157, 0.18);
+  --warning: #fbbf24;
+  --warning-glow: rgba(251, 191, 36, 0.4);
+  --hud-bg: rgba(11, 7, 22, 0.92);
+  --hud-border: rgba(168, 85, 247, 0.25);
 
   /* UI */
-  --radius-sm: 3px;
-  --radius-md: 6px;
-  --radius-lg: 10px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
 
   /* Glassmorphism */
-  --glass-bg: rgba(255, 255, 255, 0.04);
-  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(168, 85, 247, 0.04);
+  --glass-border: rgba(168, 85, 247, 0.14);
   --glass-blur: 12px;
 
   /* Animation */

@@ -21,8 +21,8 @@
     justify-content: center;
     gap: 0.8rem;
     padding: 0.5rem 1.2rem;
-    background: rgba(0, 255, 157, 0.05);
-    border: 1px solid rgba(0, 255, 157, 0.2);
+    background: var(--primary-glow-subtle);
+    border: 1px solid var(--hud-border);
     border-radius: 50px;
     font-family: var(--font-mono);
     font-size: 0.72rem;
@@ -224,11 +224,11 @@
 .btn-contact-action.copy-btn:hover {
     border-color: var(--primary);
     color: var(--primary);
-    background: rgba(0, 255, 157, 0.08);
+    background: var(--primary-glow-subtle);
 }
 
 .btn-contact-action.copied {
-    background: rgba(0, 255, 157, 0.2) !important;
+    background: var(--primary-glow-subtle) !important;
     border-color: var(--primary) !important;
     color: var(--primary) !important;
     font-weight: 700;
