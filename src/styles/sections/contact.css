@@ -19,8 +19,20 @@
 }
 
 @media (max-width: 600px) {
+    .contact-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
     .contact-simple-container {
+        width: 100%;
+        max-width: 100%;
         grid-template-columns: 1fr;
+        gap: 0.8rem;
+        margin-top: 1.5rem;
+    }
+    .c-link {
+        padding: 1.4rem 1rem;
     }
 }
 

@@ -69,8 +69,14 @@ img {
 }
 
 @media (max-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
     .section {
-        padding: 4rem 0;
+        padding: 3.5rem 0;
     }
 
     html {
