@@ -269,6 +269,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Skills Interactive Tab Filtering
+    const skillTabBtns = document.querySelectorAll('.skill-tab-btn');
+    const skillCards = document.querySelectorAll('.skill-card');
+
+    if (skillTabBtns.length && skillCards.length) {
+        skillTabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-skill-filter');
+
+                skillTabBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                skillCards.forEach(card => {
+                    const category = card.getAttribute('data-skill-category');
+                    card.classList.remove('tab-animate');
+
+                    if (filter === 'all' || category === filter) {
+                        card.classList.remove('tab-hidden');
+                        void card.offsetWidth; // Trigger reflow for animation
+                        card.classList.add('tab-animate');
+                    } else {
+                        card.classList.add('tab-hidden');
+                    }
+                });
+            });
+        });
+    }
+
     // Labs Tab Switching & Toggle
     const tabBtns = document.querySelectorAll('.lab-tab-btn');
     const tabPanels = document.querySelectorAll('.lab-panel');

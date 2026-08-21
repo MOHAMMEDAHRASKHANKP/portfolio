@@ -245,9 +245,18 @@
             </div>
           </div>
 
-          <div class="skills-grid">
+          <!-- Skills Interactive Category Tabs -->
+          <div class="skills-tabs">
+            <button class="skill-tab-btn active" data-skill-filter="all">ALL DOMAINS (8)</button>
+            <button class="skill-tab-btn" data-skill-filter="defense">🛡️ BLUE TEAM & SOC</button>
+            <button class="skill-tab-btn" data-skill-filter="offensive-net">⚔️ OFFENSIVE & NETWORK</button>
+            <button class="skill-tab-btn" data-skill-filter="dev-ai">💻 SECOPS & AI SEC</button>
+            <button class="skill-tab-btn" data-skill-filter="grc-labs">📜 GRC & LABS</button>
+          </div>
+
+          <div class="skills-grid" id="skills-grid">
             <!-- Domain 1: SOC Operations & SIEM -->
-            <div class="skill-card">
+            <div class="skill-card" data-skill-category="defense">
               <div class="skill-header">
                 <div class="skill-header-main">
                   <div class="skill-icon-wrap">
@@ -276,7 +285,7 @@
             </div>
 
             <!-- Domain 2: Threat Detection & Endpoint Security -->
-            <div class="skill-card">
+            <div class="skill-card" data-skill-category="defense">
               <div class="skill-header">
                 <div class="skill-header-main">
                   <div class="skill-icon-wrap">
@@ -304,7 +313,7 @@
             </div>
 
             <!-- Domain 3: Ethical Hacking & Vulnerability Assessment -->
-            <div class="skill-card">
+            <div class="skill-card" data-skill-category="offensive-net">
               <div class="skill-header">
                 <div class="skill-header-main">
                   <div class="skill-icon-wrap">
@@ -335,7 +344,7 @@
             </div>
 
             <!-- Domain 4: Network & Cloud Security -->
-            <div class="skill-card">
+            <div class="skill-card" data-skill-category="offensive-net">
               <div class="skill-header">
                 <div class="skill-header-main">
                   <div class="skill-icon-wrap">
@@ -363,7 +372,7 @@
             </div>
 
             <!-- Domain 5: Security Automation & Scripting -->
-            <div class="skill-card">
+            <div class="skill-card" data-skill-category="dev-ai">
               <div class="skill-header">
                 <div class="skill-header-main">
                   <div class="skill-icon-wrap">
@@ -390,7 +399,7 @@
             </div>
 
             <!-- Domain 6: GRC, Security Standards & Hardening -->
-            <div class="skill-card">
+            <div class="skill-card" data-skill-category="grc-labs">
               <div class="skill-header">
                 <div class="skill-header-main">
                   <div class="skill-icon-wrap">
@@ -417,7 +426,7 @@
             </div>
 
             <!-- Domain 7: AI & Application Security -->
-            <div class="skill-card">
+            <div class="skill-card" data-skill-category="dev-ai">
               <div class="skill-header">
                 <div class="skill-header-main">
                   <div class="skill-icon-wrap">
@@ -444,7 +453,7 @@
             </div>
 
             <!-- Domain 8: Practical Labs & Cyber Ranges -->
-            <div class="skill-card">
+            <div class="skill-card" data-skill-category="grc-labs">
               <div class="skill-header">
                 <div class="skill-header-main">
                   <div class="skill-icon-wrap">
