@@ -593,13 +593,44 @@ document.addEventListener('DOMContentLoaded', () => {
     // ScrollSpy: Update active link on scroll
     // (Previous ScrollSpy logic continues...)
 
-    // Hero System Metrics Fluctuation
-    const metricFills = document.querySelectorAll('.metric-fill');
-    setInterval(() => {
-        metricFills.forEach(fill => {
-            const randomWidth = Math.floor(Math.random() * (90 - 30 + 1) + 30);
-            fill.style.width = `${randomWidth}%`;
+    // Contact 1-Click Clipboard Copy Handler
+    const copyBtns = document.querySelectorAll('.btn-contact-action.copy-btn');
+    copyBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const textToCopy = btn.getAttribute('data-copy');
+            if (textToCopy) {
+                const showSuccess = () => {
+                    const originalHtml = btn.innerHTML;
+                    btn.classList.add('copied');
+                    btn.innerHTML = '<i class="ph ph-check"></i> COPIED ✓';
+                    setTimeout(() => {
+                        btn.classList.remove('copied');
+                        btn.innerHTML = originalHtml;
+                    }, 2000);
+                };
+
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(textToCopy).then(showSuccess).catch(() => {
+                        const tempInput = document.createElement('input');
+                        tempInput.value = textToCopy;
+                        document.body.appendChild(tempInput);
+                        tempInput.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(tempInput);
+                        showSuccess();
+                    });
+                } else {
+                    const tempInput = document.createElement('input');
+                    tempInput.value = textToCopy;
+                    document.body.appendChild(tempInput);
+                    tempInput.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(tempInput);
+                    showSuccess();
+                }
+            }
         });
-    }, 3000);
+    });
 });
 
