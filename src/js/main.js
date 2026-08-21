@@ -272,6 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Skills Interactive Tab Filtering
     const skillTabBtns = document.querySelectorAll('.skill-tab-btn');
     const skillCards = document.querySelectorAll('.skill-card');
+    const skillsGrid = document.getElementById('skills-grid');
 
     if (skillTabBtns.length && skillCards.length) {
         skillTabBtns.forEach(btn => {
@@ -280,6 +281,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 skillTabBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
+
+                if (skillsGrid) {
+                    if (filter === 'all') {
+                        skillsGrid.classList.add('show-all');
+                    } else {
+                        skillsGrid.classList.remove('show-all');
+                    }
+                }
 
                 skillCards.forEach(card => {
                     const category = card.getAttribute('data-skill-category');

@@ -153,21 +153,28 @@
     }
 }
 
-/* 8-Card Symmetrical Grid */
+/* Skills Grid Layout */
 .skills-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.4rem;
+    max-width: 1050px;
+    margin: 0 auto;
+    transition: all 0.4s ease;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 700px) {
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
+.skills-grid.show-all {
+    max-width: 1380px;
+}
+
 @media (min-width: 1200px) {
-    .skills-grid {
+    .skills-grid.show-all {
         grid-template-columns: repeat(4, 1fr);
     }
 }
