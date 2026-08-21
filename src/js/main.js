@@ -131,7 +131,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Typewriter Effect
     const typeWriterElement = document.getElementById('typewriter');
-    const textArray = ["Cybersecurity Specialist", "SOC Analyst", "Ethical Hacker", "Security Researcher"];
+    const textArray = [
+        "SOC & SIEM Operations",
+        "Threat Detection & EDR",
+        "Incident Response & Triage",
+        "Ethical Hacking & Pentesting",
+        "Python SecOps Automation",
+        "AI Application Security"
+    ];
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;

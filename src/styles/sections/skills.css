@@ -1,5 +1,5 @@
 /* ==============================
-   Skills Section — Modernized Technical Arsenal
+   Skills Section — 8-Domain Technical Arsenal & Core Stack
    ============================== */
 #skills {
     background-color: var(--bg-dark);
@@ -8,25 +8,79 @@
 
 .skills-intro {
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto var(--spacing-lg);
+    max-width: 860px;
+    margin: 0 auto 2.5rem;
 }
 
+/* Core Toolset Quick Radar Bar */
+.skills-radar-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    margin: 0 auto 3rem;
+    padding: 1.2rem 1.6rem;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    max-width: 1200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.radar-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    padding: 0.3rem 0.6rem;
+}
+
+.radar-label {
+    color: var(--secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.radar-value {
+    color: var(--text-highlight);
+}
+
+.radar-divider {
+    color: var(--border-color);
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .radar-divider {
+        display: none;
+    }
+    .skills-radar-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+        padding: 1rem;
+    }
+}
+
+/* 8-Card Symmetrical Grid */
 .skills-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.4rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 650px) {
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
     .skills-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -34,11 +88,11 @@
     background: var(--bg-panel);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
-    padding: 1.8rem 1.6rem;
+    padding: 1.5rem 1.3rem;
     transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1rem;
     position: relative;
     overflow: hidden;
 }
@@ -52,7 +106,7 @@
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, transparent, var(--primary), transparent);
-    opacity: 0.3;
+    opacity: 0.25;
     transition: opacity 0.4s ease, height 0.4s ease;
 }
 
@@ -72,27 +126,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 0.8rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    padding-bottom: 1rem;
+    padding-bottom: 0.9rem;
 }
 
 .skill-header-main {
     display: flex;
     align-items: center;
-    gap: 0.9rem;
+    gap: 0.75rem;
 }
 
 .skill-icon-wrap {
-    width: 44px;
-    height: 44px;
+    width: 38px;
+    height: 38px;
     border-radius: var(--radius-sm);
     background: rgba(0, 255, 157, 0.08);
     border: 1px solid rgba(0, 255, 157, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     color: var(--primary);
     flex-shrink: 0;
     transition: all 0.3s ease;
@@ -105,42 +159,44 @@
 }
 
 .skill-title-group h3 {
-    font-size: 1.1rem;
+    font-size: 0.98rem;
     margin: 0;
     color: var(--text-highlight);
     font-family: var(--font-header);
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
+    line-height: 1.3;
 }
 
 .skill-badge-code {
     font-family: var(--font-mono);
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     color: var(--secondary);
     background: rgba(0, 210, 255, 0.08);
     border: 1px solid rgba(0, 210, 255, 0.2);
-    padding: 0.2rem 0.55rem;
+    padding: 0.2rem 0.5rem;
     border-radius: 50px;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
 }
 
 .skill-desc {
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     color: var(--text-muted);
     line-height: 1.4;
-    margin-top: -0.4rem;
+    margin-top: -0.3rem;
 }
 
 .skill-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.55rem;
+    gap: 0.45rem;
     margin-top: auto;
 }
 
 .skill-tag {
     font-family: var(--font-mono);
-    font-size: 0.73rem;
-    padding: 0.35rem 0.75rem;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.6rem;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-sm);
@@ -148,18 +204,33 @@
     transition: all 0.25s ease;
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
+    gap: 0.25rem;
+    line-height: 1.3;
 }
 
 .skill-tag::before {
     content: '›';
     color: var(--primary);
     font-weight: bold;
+    opacity: 0.8;
+}
+
+/* Primary Highlight Tags (for major tools) */
+.skill-tag.highlight {
+    border-color: rgba(0, 255, 157, 0.35);
+    background: rgba(0, 255, 157, 0.06);
+    color: var(--text-highlight);
+    font-weight: 600;
+}
+
+.skill-tag.highlight::before {
+    color: var(--primary);
+    content: '★';
+    font-size: 0.65rem;
 }
 
 .skill-card:hover .skill-tag {
-    border-color: rgba(0, 255, 157, 0.25);
-    background: rgba(0, 255, 157, 0.04);
+    border-color: rgba(0, 255, 157, 0.2);
 }
 
 .skill-tag:hover {
