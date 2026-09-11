@@ -128,17 +128,17 @@
 
     .about-stats {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
         width: 100%;
         margin-top: 1.5rem;
     }
 
     .stat-item {
-        padding-left: 0.5rem;
+        padding-left: 0.6rem;
     }
 
     .stat-number {
-        font-size: 1.4rem;
+        font-size: 1.35rem;
     }
 }

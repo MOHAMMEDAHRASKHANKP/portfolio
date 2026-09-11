@@ -132,10 +132,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Typewriter Effect
     const typeWriterElement = document.getElementById('typewriter');
     const textArray = [
+        "Certified Ethical Hacker (CEH v13)",
         "SOC & SIEM Operations",
         "Threat Detection & EDR",
         "Incident Response & Triage",
-        "Ethical Hacking & Pentesting",
+        "Red & Blue Team Operations",
         "Python SecOps Automation",
         "AI Application Security"
     ];
