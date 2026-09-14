@@ -49,23 +49,55 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 2500); // 2.5 seconds
     }
 
-    // Mobile Menu Toggle
+    // Mobile Menu Toggle (Compact Cyber HUD)
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
 
-    if (menuToggle) {
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('mobile-active');
+    const closeMobileMenu = () => {
+        if (navMenu && navMenu.classList.contains('mobile-active')) {
+            navMenu.classList.remove('mobile-active');
+            if (menuToggle) {
+                menuToggle.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                if (icon) icon.className = 'ph ph-list';
+            }
+        }
+    };
+
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = navMenu.classList.toggle('mobile-active');
+            menuToggle.classList.toggle('active', isOpen);
+            const icon = menuToggle.querySelector('i');
+            if (icon) {
+                icon.className = isOpen ? 'ph ph-x' : 'ph ph-list';
+            }
+        });
+
+        // Close menu when clicking any nav link
+        navLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                closeMobileMenu();
+            }
+        });
+
+        // Close menu on ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeMobileMenu();
+        });
+
+        // Close menu when resizing beyond mobile breakpoint
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) closeMobileMenu();
         });
     }
-
-    // Close menu when clicking a link
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('mobile-active');
-        });
-    });
 
     // Header Scroll Effect
     const header = document.getElementById('header');
