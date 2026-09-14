@@ -357,7 +357,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const closeLightbox = () => lightbox.classList.remove('active');
+    const closeLightbox = () => {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    };
     lightboxClose.addEventListener('click', closeLightbox);
     lightbox.addEventListener('click', (e) => {
         if (e.target === lightbox) closeLightbox();
@@ -365,6 +368,24 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') closeLightbox();
     });
+
+    // CEH Hero HUD Inspect Certificate
+    const heroInspectCeh = document.getElementById('hero-inspect-ceh');
+    const cehHeroHud = document.getElementById('ceh-hero-hud');
+    const openCehCertLightbox = (e) => {
+        e.stopPropagation();
+        lightboxImg.src = '/gallery/ceh-certificate.png';
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    };
+    if (heroInspectCeh) heroInspectCeh.addEventListener('click', openCehCertLightbox);
+    if (cehHeroHud) {
+        cehHeroHud.addEventListener('click', (e) => {
+            if (!e.target.closest('#hero-inspect-ceh')) {
+                openCehCertLightbox(e);
+            }
+        });
+    }
 
     // Reveal on Scroll (Scan Effect)
     const revealElements = document.querySelectorAll('.reveal-scan');
